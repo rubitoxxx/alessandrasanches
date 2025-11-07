@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio de Sobrancelhas Alessandra Sanches</title>
+  <meta name="description" content="Design de sobrancelhas personalizado, micropigmentação e cuidados premium no Studio Alessandra Sanches em São Paulo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Menu principal">
+      <a class="nav__brand" href="#inicio" aria-label="Página inicial Studio Alessandra Sanches">
+        <span class="nav__brand-logo" aria-hidden="true">AS</span>
+        <span class="nav__brand-text">Alessandra Sanches Studio</span>
+      </a>
+      <button class="nav__toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile" onclick="toggleMobileNav()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav__list" id="menu-desktop">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a class="btn btn--sm" href="#contato">Agendar</a></li>
+      </ul>
+    </nav>
+    <div class="nav__overlay" id="menu-mobile">
+      <ul class="nav__overlay-list">
+        <li><a href="#inicio" onclick="toggleMobileNav(true)">Início</a></li>
+        <li><a href="#servicos" onclick="toggleMobileNav(true)">Serviços</a></li>
+        <li><a href="#portfolio" onclick="toggleMobileNav(true)">Portfólio</a></li>
+        <li><a href="#depoimentos" onclick="toggleMobileNav(true)">Depoimentos</a></li>
+        <li><a class="btn" href="#contato" onclick="toggleMobileNav(true)">Agendar agora</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Studio de Sobrancelhas em São Paulo</span>
+        <h1 class="hero__title">Elegância que realça sua beleza natural</h1>
+        <p class="hero__text">Alessandra Sanches e sua equipe unem técnica, sensibilidade artística e produtos de alta performance para entregar sobrancelhas impecáveis, alinhadas ao seu estilo.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#contato">Agendar avaliação</a>
+          <a class="btn btn--outline" href="#servicos">Conhecer serviços</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>12+</strong> anos de experiência</li>
+          <li><strong>3.500+</strong> clientes atendidas</li>
+          <li><strong>100%</strong> atendimento personalizado</li>
+        </ul>
+      </div>
+      <figure class="hero__media" aria-hidden="true">
+        <img src="alessandra%20sanches.jpg" alt="Alessandra Sanches cuidando das sobrancelhas de uma cliente">
+      </figure>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about__content">
+        <span class="section-kicker">Sobre nós</span>
+        <h2 class="section-title">Um espaço criado para valorizar olhares</h2>
+        <p>O Studio de Sobrancelhas Alessandra Sanches nasceu da paixão por transformar a autoestima das mulheres. Nossa missão é entregar resultados naturais, harmoniosos e duradouros por meio de técnicas atualizadas e protocolos exclusivos.</p>
+        <div class="about__highlights">
+          <article>
+            <h3>Consultoria completa</h3>
+            <p>Avaliação facial detalhada para definir o design ideal considerando proporções e estilo de vida.</p>
+          </article>
+          <article>
+            <h3>Equipe especialista</h3>
+            <p>Profissionais certificados em design de sobrancelhas, micropigmentação e epilação egípcia (threading).</p>
+          </article>
+          <article>
+            <h3>Produtos premium</h3>
+            <p>Marcas dermatologicamente testadas que garantem conforto e segurança em cada atendimento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="section-header">
+        <span class="section-kicker">Nossos serviços</span>
+        <h2 class="section-title">Protocolos personalizados para cada tipo de sobrancelha</h2>
+      </div>
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon"><i class="fa-solid fa-feather"></i></div>
+          <h3>Design de sobrancelhas</h3>
+          <p>Mapeamento facial com pinça, cera ou linha, alinhamento dos fios e finalização com coloração vegetal ou henna.</p>
+          <span class="service-card__duration">Sessão de 40 minutos</span>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Micropigmentação fio a fio</h3>
+          <p>Reconstrói falhas com traços hiper-realistas e acabamento suave, respeitando a cor e textura naturais.</p>
+          <span class="service-card__duration">Resultado por até 18 meses</span>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Epilação egípcia (threading)</h3>
+          <p>Técnica milenar com linha 100% algodão que remove delicadamente os pelos e garante contorno preciso e duradouro.</p>
+          <span class="service-card__duration">Sessão de 35 minutos</span>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon"><i class="fa-solid fa-spa"></i></div>
+          <h3>Rejuvenescimento do olhar</h3>
+          <p>Combo com design, revitalização da área dos olhos e máscara nutritiva para potencializar o brilho da pele.</p>
+          <span class="service-card__duration">Protocolo exclusivo</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="section-header">
+        <span class="section-kicker">Portfólio</span>
+        <h2 class="section-title">Antes e depois que encantam</h2>
+        <p>Cada transformação é cuidadosamente planejada para destacar o olhar com naturalidade e personalidade.</p>
+      </div>
+      <div class="portfolio__grid">
+        <figure>
+          <img src="Design%20de%20sobrancelhas%20com%20henna%20vegetal.jpg" alt="Antes e depois de design de sobrancelhas">
+          <figcaption>Design de sobrancelhas com henna vegetal</figcaption>
+        </figure>
+        <figure>
+          <img src="Micropigmentação%20fio%20a%20fio%20de%20acabamento%20sutil.jpg" alt="Micropigmentação fio a fio">
+          <figcaption>Micropigmentação fio a fio de acabamento sutil</figcaption>
+        </figure>
+        <figure>
+          <img src="epilação%20egípcia%20ou%20threading.jpg" alt="Epilação egípcia com linha">
+          <figcaption>Epilação egípcia (threading) com hidratação calmante</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos">
+      <div class="section-header">
+        <span class="section-kicker">Depoimentos</span>
+        <h2 class="section-title">Clientes que confiam e recomendam</h2>
+      </div>
+      <div class="testimonials__grid">
+        <article class="testimonial-card">
+          <p>“Minha autoestima mudou completamente. A Alessandra tem um olhar único para respeitar o formato do meu rosto.”</p>
+          <span class="testimonial-card__name">Juliana Martins</span>
+          <span class="testimonial-card__service">Micropigmentação fio a fio</span>
+        </article>
+        <article class="testimonial-card">
+          <p>“Ambiente acolhedor, atendimento impecável e resultado perfeito. Recomendo de olhos fechados!”</p>
+          <span class="testimonial-card__name">Camila Andrade</span>
+          <span class="testimonial-card__service">Design com henna</span>
+        </article>
+        <article class="testimonial-card">
+          <p>“Nunca imaginei que meus fios poderiam ficar tão alinhados. A epilação egípcia deixou meus contornos muito mais definidos.”</p>
+          <span class="testimonial-card__name">Renata Souza</span>
+          <span class="testimonial-card__service">Epilação egípcia</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="agendamento">
+      <div class="cta__content">
+        <h2>Agenda aberta para novos atendimentos</h2>
+        <p>Reserve sua avaliação gratuita e descubra o protocolo ideal para as suas sobrancelhas.</p>
+        <a class="btn" href="https://wa.me/5545999132434" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="contact__intro">
+        <span class="section-kicker">Contato</span>
+        <h2 class="section-title">Vamos cuidar do seu olhar?</h2>
+        <p>Atendemos em Marechal Cândido Rondon, PR. Agende seu horário via WhatsApp ou preencha o formulário que retornamos em até 24 horas úteis.</p>
+        <ul class="contact__details">
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5545999132434" target="_blank" rel="noopener">+55 45 99913-2434</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:contato@alessandrasanches.com">contato@alessandrasanches.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Rua Marechal Deodoro, 999 - Marechal Cândido Rondon</li>
+          <li><i class="fa-solid fa-clock"></i> Terça a sábado, das 9h às 19h</li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contato-form" action="#" method="post">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required placeholder="Como devemos te chamar?">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(45) 99913-2434">
+        </div>
+        <div class="form-group">
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione uma opção</option>
+            <option value="design">Design de sobrancelhas</option>
+            <option value="micropigmentacao">Micropigmentação fio a fio</option>
+            <option value="threading">Epilação egípcia (threading)</option>
+            <option value="combo">Rejuvenescimento do olhar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco do que você busca"></textarea>
+        </div>
+        <button class="btn" type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <span class="nav__brand-logo" aria-hidden="true">AS</span>
+        <p>Studio de Sobrancelhas Alessandra Sanches<br>Transformando olhares desde 2013.</p>
+      </div>
+      <div>
+        <h4>Siga o studio</h4>
+        <ul class="footer-social">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links úteis</h4>
+        <ul class="footer-links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Política de privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__copy">© <span id="ano-atual"></span> Alessandra Sanches Studio. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
